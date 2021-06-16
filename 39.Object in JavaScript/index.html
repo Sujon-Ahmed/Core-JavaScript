@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Declaration of Objects Method_01
+
+        /* var fess = {};
+        fess['Sujon'] = 100;
+        fess['Riman'] = 200;
+        fess['Sumon'] = 300;
+        document.write(fess['Riman']); */
+
+         // Declaration of Objects Method_02
+        //  var fess = {};
+        //  fess.Sujon = 100;
+        //  fess.Riman = 200;
+        //  fess.Sumon = 300;
+        //  document.write(fess.Sujon);
+
+        /* var fess = {
+            sujon : 400,
+            total: function() {return(400+100)}
+        };
+         document.write(fess.total()); */
+
+        /*  var fess ={
+             sujon:100,
+             riman:200,
+             "super man":300
+         };
+         document.write(fess["super man"]); */
+
+       /*  var fess = new Object();
+        fess['Sujon'] = 100;
+        fess['Riman'] = 200;
+        fess['Sumon'] = 300;
+        fess.total = function(){
+            return(100+500);
+        };
+        document.write(fess.total()); */
+
+        var fess =  {Sujon:100,Riman:200};
+        fess.Jamil = 500;       // fess['Jamil'] = 500;
+        document.write(fess.Jamil + " " + fess.Sujon + " " + fess.Riman + "<br>");
+        fess.show = function(){};
+        //delete fess.Sujon;
+        document.write(fess.Jamil + " " + fess.Sujon + " " + fess.Riman + "<br>");
+        console.log(fess);
+
+    </script>
+</body>
+</html>

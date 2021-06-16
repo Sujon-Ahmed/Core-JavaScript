@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Mobile = function(model_no, sprice){
+            this.model = model_no;
+            this.color = 'White';
+            this.price = 3000;  
+            /* if i will use var price = 3000; than this properties is private noone can access!
+             var price = 3000;
+             if i will access this properties than follow this method
+                this.sellingprice = function(){
+                    return(price);
+                }
+            */
+            this.sp = sprice;
+            /* if i will use var sellingprice = function() than this method is private noone can't access! */
+            this.sellingprice = function(){
+                return (this.price + this.sp);
+            };
+            this.data = function(){
+                document.write("Model No : " + this.model + " Price : " + this.sellingprice());
+            }
+        };
+        //var samsung = new Mobile('Galaxy', 2000);
+        //samsung.data();
+        var nokia = new Mobile('3310', 1000);
+        nokia.data();
+    </script>
+</body>
+</html>

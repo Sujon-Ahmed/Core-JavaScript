@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Parameter VS Arguments</title>
+</head>
+<body>
+    <script>
+        // Rest Parameters
+        function RestShow(a, ...args){
+            console.log("A :" + a);
+            console.log(args);
+        }
+        RestShow(10,20,30,40,50);
+
+        // Arguments Object
+        function show(a){
+            console.log("A :" + a);
+            console.log(arguments);
+        }
+        show(10,20,30,40,50);
+
+    </script>
+</body>
+</html>

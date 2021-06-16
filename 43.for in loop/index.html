@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mobile(model_no){
+            this.model = model_no;
+            this.color = 'White';
+            this.ram = '4GB';
+            this.price = function(){
+                document.write(this.model + "Price MRP.5000 <br>");
+            };
+        }
+        var Nokia = new mobile('3310');
+        // Display keys and values with for...in loop
+        for(specification in Nokia){
+            if(typeof Nokia[specification] !== 'function'){
+                document.write(specification + " " + Nokia[specification] + "<br>");
+            };   
+        }
+        // document.write(Object.keys(Nokia)); // Display keys
+    </script>
+</body>
+</html>

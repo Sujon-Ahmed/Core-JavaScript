@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Object literal
+        var fees = {};
+        fess['Sujon'] = 100;
+
+        // Object literal declare and initial
+        var fees = {Riman : 200};
+
+        // Object Constructor
+        var fees = new Object();
+
+        // Factory Function
+        function mobile (){
+            return{
+                model: 'Galaxy'
+            }
+        }
+        var samsung =  mobile();
+
+        //Constructor Function
+        function mobile(){
+            this.model = 'Galaxy'
+        }
+        var samsung = new mobile();
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Typeof Method
+        function mobile(model_no){
+            this.model = model_no;
+            this.memory = 4;
+        }
+        var samsung = new mobile('Galaxy');
+        
+        if(typeof samsung.memory !== "undefined"){
+            document.write("Available");
+        }else{
+            document.write("Dosen't Exist");
+        }
+
+        // In operator Method
+        /* function mobile(model_no){
+            this.model = model_no;
+            this.memory = 4;
+        }
+        var nokia = new mobile('Galaxy');
+        
+        if('memory' in nokia){
+            document.write("Available");
+        }else{
+            document.write("Dosen't Exist");
+        }  */
+
+        // hasOwnProperty Method
+        function mobile(model_no){
+            this.model = model_no;
+            this.color = 'White';
+        }
+        var nokia = new mobile('Galaxy');
+        if(nokia.hasOwnProperty('color')){
+            document.write("Available");
+        }else{
+            document.write("Dosen't Exist");
+        } 
+    </script>
+</body>
+</html>

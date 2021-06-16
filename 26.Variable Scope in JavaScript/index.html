@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /*  // Accessible form anywhere
+        var i = "I am global variable";  // Global variable
+        function show(){
+            document.write(i + "<br>"); // Inside function
+        }
+        show();
+        document.write(i + "<br>"); // Outside function
+
+        function display(){
+            document.write(i + "<br>"); // Inside function
+        }
+        display();
+
+        if(true){
+            document.write(i + "<br>"); // Inside block
+        } */
+
+        /* function show(){
+            var j = "I am Local Variable";  // Inside function
+            document.write(j + "<br>");
+        }
+        show();
+        document.write(j + "<br>");     // Outside function
+
+        function display(){
+            document.write(j + "<br>");
+        }
+        display();
+
+        if(true){
+            document.write(j + "<br>");
+        } */
+
+        // Experiment
+        function show(){
+            var j = "J a Local variable of outer variable"; 
+            document.write(j + "<br>");
+            function fun(){
+                var k = "K a Local variable of inner variable";
+                document.write(k + "<br>");
+                document.write(j + "<br>");
+            }
+            fun();
+            document.write(k + "<br>");
+        }
+        show();
+        
+    </script>
+</body>
+</html>
